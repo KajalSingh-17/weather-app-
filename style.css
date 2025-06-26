@@ -1,0 +1,161 @@
+*{
+margin: 0px;
+padding:0px;
+}
+
+body{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: #60492C;
+    min-height: 100vh;
+    min-width: 100vw;
+ 
+}
+.container{
+background-color:#F9EBE0;
+color: rgb(16, 15, 15);
+padding: 2rem;
+border-radius: 2rem;
+margin-bottom: 15rem;
+}
+form ,select ,input ,button ,#inpN {
+border: none;
+width: 100%;
+outline: none;
+background-color:#F9EBE0;
+
+}
+#select , #inpN{
+    height:3rem;
+  border-radius: 0.5rem;
+       
+      font-family:Verdana, Geneva, Tahoma, sans-serif;
+      font-size: medium;
+       
+}
+
+#inpN{
+ padding-left: 1rem;
+width: 100%;
+outline: none;
+background-color:#F9EBE0;
+color:black;
+height: 2rem;  
+border: 1px solid lightgrey;
+}
+.fromId{
+    display: flex;
+}
+#exchangeVal{
+    font-weight:bolder;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding-top:1 rem ;
+    padding-bottom: 1rem;
+}
+#exc-btn{
+    height: 2rem;
+    font-size: 1rem;
+    border: black;
+    border-radius: 0.5rem;
+    background-color: #208aae;
+border:1px solid lightgrey;
+font-weight: bold;
+cursor: pointer;
+} 
+
+.whole{
+    display: flex;
+  
+}
+
+.whole option {
+    min-height: 200px;
+}
+.from-para {
+    display: flex;
+    padding-top: 0.5rem;
+}
+.to-para{
+    display:flex; padding-top: 0.5rem;
+}
+.whole img{
+    max-width: 2rem;
+}
+#from ,#to{
+    padding:0.5rem 0.5rem 0.5rem 0.5rem ;
+}
+/* comment */
+.from-para,
+.to-para {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 0.3rem;
+   
+}
+
+.from-para p,
+.to-para p {
+  font-weight: bold;
+  margin-bottom: 0.3rem;
+}
+
+.from-para img,
+.to-para img {
+  width: 2rem;
+  height: auto;
+}
+
+.from-para select,
+.to-para select {
+  width: 5rem;
+  padding: 0.4rem;
+  border-radius: 0.4rem;
+
+}
+.whole {
+  display: flex;
+  align-items: flex-end;
+  justify-content: center;
+  gap: 2rem;
+  flex-wrap: wrap;
+
+}
+.yo1 , .yo2{
+cursor: pointer;
+    display:flex;
+    justify-content: center;
+    align-items: center;
+    width: 7rem;
+    border-radius: 0.5rem;
+border: 1px solid lightgrey;
+padding-left: 0.5rem;
+font-weight: bolder;
+
+}
+i{
+ font-size: larger;
+   padding-bottom:1rem;
+   padding-left: 1.2rem;
+}
+
+
+@media (max-width:600px) {
+  .container{
+    min-height: 60vh;
+   min-width:50vh ;
+   padding: 1rem;
+  }
+
+  .whole {
+    flex-direction: column;
+    gap: 1rem;
+  }
+
+  .yo1, .yo2 {
+    width: 100%;
+  }
+}
