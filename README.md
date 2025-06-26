@@ -12,7 +12,7 @@ A simple and responsive currency converter built using HTML, CSS, and JavaScript
 
 * Live Demo *
 
-👉 
+👉 https://currencyconverterfree.netlify.app/
 
 ## Technologies Used
 
