@@ -34,7 +34,9 @@ background-color:#F9EBE0;
       font-size: medium;
        
 }
-
+#amt{
+font-weight: bolder;
+}
 #inpN{
  padding-left: 1rem;
 width: 100%;
@@ -52,19 +54,27 @@ border: 1px solid lightgrey;
     display: flex;
     justify-content: center;
     align-items: center;
+ 
     padding-top:1 rem ;
     padding-bottom: 1rem;
 }
-#exc-btn{
-    height: 2rem;
-    font-size: 1rem;
-    border: black;
-    border-radius: 0.5rem;
-    background-color: #208aae;
-border:1px solid lightgrey;
-font-weight: bold;
-cursor: pointer;
-} 
+#exc-btn {
+  height: 2.5rem;
+  font-size: 1rem;
+  border-radius: 0.5rem;
+  background-color: #208aae;
+  border: 1px solid lightgrey;
+  font-weight: bold;
+  cursor: pointer;
+  transition: all 0.3s ease; 
+}
+
+#exc-btn:hover {
+  background-color: #166d99; 
+  transform: scale(1.05);   
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2); 
+}
+
 
 .whole{
     display: flex;
@@ -87,7 +97,7 @@ cursor: pointer;
 #from ,#to{
     padding:0.5rem 0.5rem 0.5rem 0.5rem ;
 }
-/* comment */
+
 .from-para,
 .to-para {
   display: flex;
@@ -143,67 +153,62 @@ i{
 }
 
 
-@media (max-width:600px) {
-  .container{
-    min-height: 60vh;
-   min-width:50vh ;
-   padding: 1rem;
-  }
-
-  .whole {
-    flex-direction: column;
-    gap: 1rem;
-  }
-
-  .yo1, .yo2 {
-    width: 100%;
-  }
-} 
-
-select {
-  text-align: center;
-  padding: 0.4rem;
-  font-size: 1rem;
-  overflow: hidden;
-  white-space: nowrap;
-  text-overflow: ellipsis;
-}
-
-/* ✅ Ensure dropdown opens downward */
-select {
-  position: relative;
-  z-index: 1;
-}
-
-/* ✅ Let dropdown open downwards by pushing container up */
-body {
-  align-items: flex-start;
-  padding-top: 2rem;
-}
-
-/* ✅ Responsive fixes for mobile only */
 @media (max-width: 600px) {
+  body {
+    align-items: flex-start;
+    padding-top: 2rem;
+    min-height: 100vh;
+    overflow-x: hidden;
+  }
+
   .container {
     width: 90%;
-    margin-bottom: 5rem;
+    padding: 1.5rem;
+    margin-top: 2rem;
+    margin-bottom: 2rem;
+    border-radius: 1rem;
   }
 
   .whole {
     flex-direction: column;
     gap: 1rem;
+    align-items: stretch;
   }
 
   .from-para select,
   .to-para select {
     width: 100%;
-    max-width: 100%;
+    font-size: 1rem;
+    padding: 0.5rem;
+    border-radius: 0.4rem;
+  }
+
+  #inpN {
+    font-size: 1rem;
+    height: 2.5rem;
   }
 
   #exc-btn {
     width: 100%;
+    height: 2.5rem;
+    font-size: 1rem;
   }
 
-  #inpN {
+  .yo1, .yo2 {
     width: 100%;
+    justify-content: center;
+    padding: 0.5rem;
+  }
+
+  #exchangeVal {
+    font-size: 1rem;
+    text-align: center;
+    margin-top: 1rem;
+  }
+
+  select {
+    min-width: 100%;
+    max-width: 100%;
+    text-align: center;
   }
 }
