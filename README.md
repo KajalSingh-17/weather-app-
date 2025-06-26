@@ -1,6 +1,6 @@
 Currency Converter Web 
 
-A simple and responsive currency converter built using HTML, CSS, and JavaScript, using real-time exchange rates from the [Frankfurter API](https://www.frankfurter.app/).
+A simple and responsive currency converter built using HTML, CSS, and JavaScript, using real-time exchange rates from the (https://www.exchangerate-api.com).
 
  Features
 
