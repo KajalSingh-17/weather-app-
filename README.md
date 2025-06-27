@@ -8,7 +8,7 @@
 
 ## 🔗 Live Demo
 
-
+-Live Link :https://weather-now-9.netlify.app/
 
 
 
